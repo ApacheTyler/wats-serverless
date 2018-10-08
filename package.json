@@ -4,7 +4,11 @@
   "description": "Project for my serverless talk",
   "main": "handler.js",
   "scripts": {
+    "dev": "sls offline start --port 4500",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "serverless-offline": "^3.27.0"
   },
   "author": "",
   "license": "ISC"
