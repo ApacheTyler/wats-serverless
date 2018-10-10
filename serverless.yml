@@ -63,7 +63,6 @@ functions:
   hello:
     handler: handler.handler
     events:
-      - http: ANY /api
       - http: "ANY /{param+}"
 
 #    The following are a few example events you can configure
