@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "aws-serverless-koa": "^1.0.0",
-    "koa": "2.5.3"
+    "koa": "2.5.3",
+    "koa-route": "^3.2.0"
   },
   "devDependencies": {
     "serverless-offline": "^3.27.0"
