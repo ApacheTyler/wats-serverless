@@ -6,18 +6,18 @@ const db = {
   todos: [
     {
       id: "1",
-      todo: "demo sls"
+      todoMessage: "demo sls"
     },
     {
       id: "2",
-      todo: "deploy to aws"
+      todoMessage: "deploy to aws"
     }
   ]
 };
 
 // todos.controller.js
 const todos = {
-  list: ctx => (ctx.body = db),
+  list: ctx => (console.log("hello there"), (ctx.body = db)),
   get: (ctx, id) =>
     (ctx.body = db.todos.filter(todo => id === todo.id).pop() || ctx.throw(404))
 };
