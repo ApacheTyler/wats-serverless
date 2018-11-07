@@ -17,7 +17,7 @@ const db = {
 
 // todos.controller.js
 const todos = {
-  list: ctx => (console.log("hello there"), (ctx.body = db)),
+  list: ctx => (ctx.body = db),
   get: (ctx, id) =>
     (ctx.body = db.todos.filter(todo => id === todo.id).pop() || ctx.throw(404))
 };
